@@ -1,0 +1,12 @@
+{
+  "name": "attestation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./style/style.css -o ./style/output.css -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,118 @@
+/* Animation Logo */
+#L{
+    display: block;
+    opacity: 0;
+    transform: translateX(-5%);
+    animation: logoanim 1s ease-out forwards;
+}
+#i{
+    display: block;
+    opacity: 0;
+    transform: translateX(-5%);
+    animation: logoanim 0.5s 0.5s ease-out forwards;
+}
+#k{
+    display: block;
+    opacity: 0;
+    transform: translateX(-5%);
+    animation: logoanim 0.5s 1s ease-out forwards;
+}
+#e{
+    display: block;
+    opacity: 0;
+    transform: translateX(-5%);
+    animation: logoanim 0.5s 1.5s ease-out forwards;
+}
+#A{
+    display: block;
+    opacity: 0;
+    transform: translateX(-5%);
+    animation: logoanim 0.5s 2s ease-out forwards;
+}
+#n{
+    display: block;
+    opacity: 0;
+    transform: translateX(-5%);
+    animation: logoanim 0.5s 2.5s ease-out forwards;
+}
+#i2{
+    display: block;
+    opacity: 0;
+    transform: translateX(-5%);
+    animation: logoanim 0.5s 3s ease-out forwards;
+}
+#m{
+    display: block;
+    opacity: 0;
+    transform: translateX(-5%);
+    animation: logoanim 0.5s 3.5s ease-out forwards;
+}
+
+@keyframes logoanim{
+    100%{
+        opacity: 100;
+        transform:translateX(6%)
+    }
+}
+
+/* Animation text acceuil */
+p{
+    color: #222;
+    color: transparent;
+    font-size: 0px;  
+}
+
+p span{
+    font-size: clamp(20px, 8vw, 120px);
+
+}
+p span::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: translate(-120%);
+   
+}
+p:nth-child(1){
+
+    font-weight: 300;
+    animation: text 0s 5s forwards;
+}
+p:nth-child(2){
+    animation: text 0s 5.3s forwards;
+}
+p:nth-child(1) span::after{
+    background: salmon;
+    animation: slide-in 0.75s 4s ease-out forwards,
+    slide-out 0.75s 5.3s ease-out forwards ;
+}
+p:nth-child(2) span::after{
+    background: royalblue;
+    animation: slide-in 0.75s 4.6s ease-out forwards,
+    slide-out 0.75s 5.6s ease-out forwards ;
+}
+
+@keyframes slide-in{
+    100%{
+        transform: translateX(0%);
+    }
+}
+@keyframes slide-out{
+    100%{
+        transform: translateX(100%);
+    }
+}
+@keyframes text{
+    100%{
+        color: #222;
+    }
+}
+
+/* Fin animation text acceuil */
+
+
+
